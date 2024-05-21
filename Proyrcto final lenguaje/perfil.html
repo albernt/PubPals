@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Site</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #ffffff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://i.pinimg.com/originals/3c/8c/9e/3c8c9e139d33ae32453741c476647043.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .container-custom {
+        background-color: #525151;
+        border: 2px solid #ffa500; /* Naranja neón */
+        color: white; /* Texto blanco para mejor legibilidad */
+        border-radius: 10px; /* Redondear las esquinas */
+        box-shadow: 0 0 10px #ffa500, 0 0 20px #ffa500, 0 0 30px #ffa500,
+          0 0 40px #ffa500; /* Efecto de borde neón */
+      }
+
+      .btn-custom {
+        background-color: #ffa500; /* Naranja neón */
+        color: white; /* Texto blanco para mejor legibilidad */
+        border: none; /* Eliminar el borde predeterminado */
+        border-radius: 5px; /* Redondear las esquinas de los botones */
+      }
+
+      .btn-custom:hover {
+        background-color: #ff4500; /* Naranja más oscuro al pasar el cursor */
+      }
+
+      /* Estilo para la tarjeta de perfil */
+      .card {
+        background-color: #525151; /* Fondo negro para la tarjeta */
+        border: 2px solid #525151; /* Borde naranja */
+        border-radius: 10px; /* Redondear las esquinas */
+      }
+
+      /* Estilo para el encabezado de la tarjeta */
+      .card-header {
+        background-color: #ffa500; /* Fondo naranja para el encabezado */
+        color: #525151; /* Texto negro para mejor legibilidad */
+      }
+
+      /* Estilo para el cuerpo de la tarjeta */
+      .card-body {
+        background-color: #525151; /* Fondo negro para el cuerpo */
+      }
+
+      /* Estilo para el formulario */
+      form {
+        background-color: #525151; /* Fondo negro para el formulario */
+        padding: 20px; /* Espacio interno */
+        border-radius: 10px; /* Redondear las esquinas del formulario */
+      }
+    </style>
+
+    <div class="container-xl px-4 mt-4 container-custom">
+      <hr class="mt-0 mb-4" />
+      <div class="row">
+        <div class="col-xl-4">
+          <!-- Tarjeta de imagen de perfil-->
+          <div class="card mb-4 mb-xl-0">
+            <div class="card-header">Foto de Perfil</div>
+            <div class="card-body text-center">
+              <!-- Imagen de perfil -->
+              <img
+                class="img-account-profile rounded-circle mb-2"
+                src="img/usuarioVacio.jpg"
+                alt=""
+              />
+              <!-- Mensaje de ayuda -->
+              <div class="small font-italic text-white mb-4">
+                JPG o PNG no mayores de 5 MB
+              </div>
+              <!-- Botón de carga de imagen -->
+              <button class="btn btn-primary btn-custom" type="button">
+                Subir nueva imagen
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8">
+          <!-- Tarjeta de detalles de cuenta-->
+          <div class="card mb-4">
+            <div class="card-header">Detalles de la Cuenta</div>
+            <div class="card-body">
+              <form>
+                <!-- Grupo de formulario (nombre de usuario) -->
+                <div class="mb-3">
+                  <label class="small mb-1" for="inputUsername"
+                    >Nombre de usuario</label
+                  >
+                  <input
+                    class="form-control"
+                    id="inputUsername"
+                    type="text"
+                    placeholder="Ingresa tu nombre de usuario"
+                    value="Inserte su nombre de usuario"
+                  />
+                </div>
+                <!-- Fila del formulario -->
+                <div class="row gx-3 mb-3">
+                  <!-- Grupo de formulario (nombre) -->
+                  <div class="col-md-6">
+                    <label class="small mb-1" for="inputFirstName"
+                      >Nombre</label
+                    >
+                    <input
+                      class="form-control"
+                      id="inputFirstName"
+                      type="text"
+                      placeholder="Ingresa tu nombre"
+                      value="Inserte su nombre"
+                    />
+                  </div>
+                  <!-- Grupo de formulario (apellido) -->
+                  <div class="col-md-6">
+                    <label class="small mb-1" for="inputLastName"
+                      >Apellido</label
+                    >
+                    <input
+                      class="form-control"
+                      id="inputLastName"
+                      type="text"
+                      placeholder="Ingresa tu apellido"
+                      value="Inserte su apellido"
+                    />
+                  </div>
+                </div>
+                <!-- Fila del formulario -->
+                <div class="row gx-3 mb-3">
+                  <!-- Grupo de formulario (ubicación) -->
+                  <div class="col-md-6">
+                    <label class="small mb-1" for="inputLocation"
+                      >Ubicación</label
+                    >
+                    <input
+                      class="form-control"
+                      id="inputLocation"
+                      type="text"
+                      placeholder="Ingresa tu ubicación"
+                      value="Inserte su ubicación"
+                    />
+                  </div>
+                </div>
+
+                <!-- Grupo de formulario (correo electrónico) -->
+                <div class="mb-3">
+                  <label class="small mb-1" for="inputEmailAddress"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    class="form-control"
+                    id="inputEmailAddress"
+                    type="email"
+                    placeholder="Ingresa tu correo electrónico"
+                    value="nombre@ejemplo.com"
+                  />
+                </div>
+                <!-- Fila del formulario -->
+                <div class="row gx-3 mb-3">
+                  <!-- Grupo de formulario (número de teléfono) -->
+                  <div class="col-md-6">
+                    <label class="small mb-1" for="inputPhone"
+                      >Número de teléfono</label
+                    >
+                    <input
+                      class="form-control"
+                      id="inputPhone"
+                      type="tel"
+                      placeholder="Ingresa tu número de teléfono"
+                      value="555-123-4567"
+                    />
+                  </div>
+                  <!-- Grupo de formulario (cumpleaños) -->
+                  <div class="col-md-6">
+                    <label class="small mb-1" for="inputBirthday"
+                      >Fecha de nacimiento</label
+                    >
+                    <input
+                      class="form-control"
+                      id="inputBirthday"
+                      type="text"
+                      name="birthday"
+                      placeholder="Ingresa tu fecha de nacimiento"
+                      value="dd/mm/aaaa"
+                    />
+                  </div>
+                </div>
+                <!-- Botón de guardar cambios -->
+                <button class="btn btn-primary btn-custom" type="button">
+                  Guardar cambios
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
