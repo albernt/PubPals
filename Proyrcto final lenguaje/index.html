@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de sesión</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Estilos personalizados */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #ffffff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://i.pinimg.com/originals/3c/8c/9e/3c8c9e139d33ae32453741c476647043.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .login-container {
+        width: 400px;
+        background-color: #525151;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px; /* Espacio inferior para separar del logo */
+      }
+      .neon-border {
+        border: 2px solid #f0af3f;
+        box-shadow: 0 0 15px #c7f03f;
+      }
+      .neon-text {
+        color: #ffffff;
+      }
+      .neon-glow {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        background: #c7f03f;
+        z-index: -1;
+        animation: glow 1.5s ease-in-out infinite alternate;
+      }
+      @keyframes glow {
+        0% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      /* Estilo para el botón de inicio de sesión */
+      .btn-orange {
+        background-color: #f0af3f;
+        border-color: #f0af3f;
+        color: #ffffff;
+      }
+      /* Hover effect para el botón */
+      .btn-orange:hover {
+        background-color: #e29b32;
+        border-color: #e29b32;
+        color: #ffffff;
+      }
+      #styleboton {
+        text-decoration: none; /* Quita el subrayado */
+        color: inherit; /* Hereda el color del elemento padre, en este caso, el color definido por la clase "neon-text" */
+      }
+      /* Estilo para enlaces visitados */
+      a:visited {
+        color: #ffffff; /* Color blanco */
+        text-decoration: none; /* Sin subrayado */
+      }
+      .center-top {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center; /* Centra verticalmente dentro del div */
+            flex-direction: column; /* Asegura que la imagen y el formulario estén en columnas */
+            padding-top: 20px; /* Añade un poco de espacio superior si es necesario */
+
+        }
+
+        #imagenlogaso{
+          width: 200px;
+          border-radius:50%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="center-top">
+          <img class="mb-4" src="img/IMG-20240425-WA0029.png" alt="Centered Image" id="imagenlogaso">
+          <div class="container login-container neon-border">
+              <div class="neon-glow"></div>
+              <!-- Formulario de inicio de sesión -->
+              <form>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label">Correo electrónico</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder="Ingrese su correo electrónico"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputPassword"
+                    placeholder="Ingrese su contraseña"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="rememberCheck" />
+                  <label class="form-check-label" for="rememberCheck"
+                    >Recordar usuario</label
+                  >
+                </div>
+                <!-- Botón de inicio de sesión con clase personalizada -->
+                <button href="main.html" class="btn btn-orange btn-block neon-text">
+                  <a href="main.html">Iniciar sesión</a>
+                </button>
+              </form>
+              <div class="text-center mt-3 neon-text">
+                <a
+                  id="styleboton"
+                  href="registro.html"
+                  class="btn btn-orange btn-block neon-text"
+                  >Registrate aqui</a
+                >
+              </div>
+            </div>
+      </div>
+  </div>
+
+    <!-- Enlace al archivo JS de Bootstrap (opcional, solo si se necesitan componentes de JavaScript) -->
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

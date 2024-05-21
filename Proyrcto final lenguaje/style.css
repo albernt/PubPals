@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/originals/3c/8c/9e/3c8c9e139d33ae32453741c476647043.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .login-container {
+    width: 400px;
+    background-color: #525151;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Espacio inferior para separar del logo */
+  }
+  .neon-border {
+    border: 2px solid #f0af3f;
+    box-shadow: 0 0 15px #c7f03f;
+  }
+  .neon-text {
+    color: #ffffff;
+  }
+  .neon-glow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: #c7f03f;
+    z-index: -1;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* Estilo para el botón de inicio de sesión */
+  .btn-orange {
+    background-color: #f0af3f;
+    border-color: #f0af3f;
+    color: #ffffff;
+  }
+  /* Hover effect para el botón */
+  .btn-orange:hover {
+    background-color: #e29b32;
+    border-color: #e29b32;
+    color: #ffffff;
+  }
