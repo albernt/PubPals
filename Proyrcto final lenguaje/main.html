@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+   .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+   .logo {
+      width: 50px;
+      height: auto;
+    }
+
+    /* Estilos originales */
+    #listContainer {
+      display: none;
+    }
+
+   .card-header {
+      background-color: #525151;
+      color: #ffa500;
+      border-color: #f0af3f;
+    }
+
+   .btn-primary {
+      background-color: #ffa500;
+      border-color: #f0af3f;
+      margin-right: 5px;
+    }
+
+   .btn-primary:hover {
+      background-color: #ff4500;
+      border-color: #ff4500;
+    }
+
+   .list-group {
+      background-color: #525151;
+    }
+
+   .list-group-item {
+      background-color: #525151;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+    }
+
+   .list-group-item button {
+      margin-left: auto;
+    }
+
+   .card-body {
+      background-color: #525151;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #ffffff;
+      height: 100vh;
+      background-image: url(https://i.pinimg.com/originals/3c/8c/9e/3c8c9e139d33ae32453741c476647043.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+   .listContainer {
+      display: none;
+    }
+
+   .logo {
+      border-radius: 50%;
+      height: 80px;
+      width: 80px;
+    }
+
+    /* Estilo para la imagen con texto */
+   .user-info {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      /* Ajuste el margen derecho según sea necesario */
+    }
+
+   .user-info img {
+      width: 30px;
+      /* Tamaño de la imagen */
+      height: 30px;
+      margin-right: 5px;
+      /* Espacio entre la imagen y el texto */
+    }
+
+   .user-info p {
+      margin: 0;
+      /* Elimina el margen predeterminado del párrafo */
+    }
+
+    #usuariofoto {
+      border-radius: 40px;
+    }
+
+    #usuariotext {
+      color: #ffffff;
+      /* Color blanco */
+      text-decoration: none;
+      /* Sin subrayado */
+    }
+
+   .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #pruebita{
+      margin-left: 50%;
+    }
+
+    #pruebita2{
+      margin-left: 55%;
+    }
+    #pruebita3{
+      margin-left: 50%;
+    }
+    #pruebita4{
+      margin-left: 50%;
+    }
+    #pruebita5{
+      margin-left: 58%;
+    }
+    #pruebita6{
+      margin-left: 55%;
+    }
+    #pruebita7{
+      margin-left: 57%;
+    }
+    #pruebita8{
+      margin-left: 53%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Barra de encabezado -->
+  <div class="header">
+    <!-- Imagen con texto -->
+    <div class="user-info">
+      <img src="img/usuarioVacio.jpg" alt="Imagen de usuario" id="usuariofoto" />
+      <!-- Cambia la URL de la imagen según sea necesario -->
+      <p><a id="usuariotext" href="perfil.html">Usuario</a></p>
+    </div>
+    <!-- Nombre de la empresa -->
+    <h1>PubPals </h1>
+    <!-- Icono de notificaciones -->
+    <button class="btn btn-primary" style="padding: 5px;" onclick="alert('Martin ha aceptado tu solicitud de unirte al plan')">
+        <img src="https://images.vexels.com/media/users/3/223298/isolated/preview/d3c070ed1d488a95f3789c88b7c95674-icono-de-campana-de-notificaciones-plano.png"
+             alt="Icono de campana" style="width: 30px; height: 30px;" />
+    </button>
+  </div>
+
+  <!-- Lista 1 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        Deluxe Shisha Lounge: 4 planes actualmente 🟢
+        <button class="btn btn-primary float-end toggleList" id="pruebita">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Don Omar || Valoración de usuario 4/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Iván García || Valoración de usuario 5/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Alberto Bernet || Valoración de usuario 5/5⭐<button class="btn btn-primary"
+              onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Nicolás Ganfornina || Valoración de usuario 5/5⭐<button class="btn btn-primary"
+              onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista 2 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        O'David's Pub: 3 planes actualmente 🟢                  
+        <button class="btn btn-primary float-end toggleList" id="pruebita2">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Ana López || Valoración de usuario 4/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Pedro Rodríguez || Valoración de usuario 5/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            María García || Valoración de usuario 5/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista 3 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        Moon terraza Sevilla Este: 1 plan actualmente 🟢
+        <button class="btn btn-primary float-end toggleList" id="pruebita3">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Marta Ruiz || Valoración de usuario 4/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista 4 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        Pub The Jungle Sevilla: 2 planes actualmente 🟢
+        <button class="btn btn-primary float-end toggleList" id="pruebita4">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            José Martínez || Valoración de usuario 4/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Laura Sánchez || Valoración de usuario 5/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista 5 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        Bar Ginger: 1 plan actualmente 🟢
+        <button class="btn btn-primary float-end toggleList" id="pruebita5">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Pablo González || Valoración de usuario 3/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista 6 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        Pub CAPITOL: 2 planes actualmente 🟢
+        <button class="btn btn-primary float-end toggleList" id="pruebita6">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Sofía Pérez || Valoración de usuario 4/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Carlos Fernández || Valoración de usuario 5/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista 7 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        Paradise Pub: 1 plan actualmente 🟢
+        <button class="btn btn-primary float-end toggleList" id="pruebita7">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Laura Martín || Valoración de usuario 4/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lista 8 -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        The Merchant Pub: 3 planes actualmente 🟢
+        <button class="btn btn-primary float-end toggleList" id="pruebita8">
+          Planes activos
+        </button>
+        <button class="btn btn-primary float-end crearCitaBtn" onclick="showCitaForm()">
+          Crear cita
+        </button>
+      </div>
+      <div class="card-body listContainer">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Ana Pérez || Valoración de usuario 4/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Juan López || Valoración de usuario 5/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+          <li class="list-group-item">
+            Carmen García || Valoración de usuario 5/5⭐
+            <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
+              Solicitar quedar
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+  <script src="scriptmain.js"></script>
+  <script>
+    function showCitaForm() {
+      var fecha = prompt("Introduce la fecha de la cita (YYYY-MM-DD):");
+      var hora = prompt("Introduce la hora de la cita (HH:MM):");
+      var cita = "Fecha: " + fecha + "\nHora: " + hora;
+      alert("Cita creada:\n" + cita);
+    }
+  </script>
+</body>
+
+</html>
