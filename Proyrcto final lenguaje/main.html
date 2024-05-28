@@ -7,7 +7,7 @@
   <title>Main</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-   .header {
+    .header {
       background-color: #333;
       color: #fff;
       padding: 10px;
@@ -16,7 +16,7 @@
       justify-content: space-between;
     }
 
-   .logo {
+    .logo {
       width: 50px;
       height: auto;
     }
@@ -26,39 +26,39 @@
       display: none;
     }
 
-   .card-header {
+    .card-header {
       background-color: #525151;
       color: #ffa500;
       border-color: #f0af3f;
     }
 
-   .btn-primary {
+    .btn-primary {
       background-color: #ffa500;
       border-color: #f0af3f;
       margin-right: 5px;
     }
 
-   .btn-primary:hover {
+    .btn-primary:hover {
       background-color: #ff4500;
       border-color: #ff4500;
     }
 
-   .list-group {
+    .list-group {
       background-color: #525151;
     }
 
-   .list-group-item {
+    .list-group-item {
       background-color: #525151;
       display: flex;
       align-items: center;
       color: #ffffff;
     }
 
-   .list-group-item button {
+    .list-group-item button {
       margin-left: auto;
     }
 
-   .card-body {
+    .card-body {
       background-color: #525151;
     }
 
@@ -72,25 +72,25 @@
       background-repeat: no-repeat;
     }
 
-   .listContainer {
+    .listContainer {
       display: none;
     }
 
-   .logo {
+    .logo {
       border-radius: 50%;
       height: 80px;
       width: 80px;
     }
 
     /* Estilo para la imagen con texto */
-   .user-info {
+    .user-info {
       display: flex;
       align-items: center;
       margin-right: 10px;
       /* Ajuste el margen derecho según sea necesario */
     }
 
-   .user-info img {
+    .user-info img {
       width: 30px;
       /* Tamaño de la imagen */
       height: 30px;
@@ -98,7 +98,7 @@
       /* Espacio entre la imagen y el texto */
     }
 
-   .user-info p {
+    .user-info p {
       margin: 0;
       /* Elimina el margen predeterminado del párrafo */
     }
@@ -114,37 +114,160 @@
       /* Sin subrayado */
     }
 
-   .card-header {
+    .card-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    #pruebita{
+    #pruebita {
       margin-left: 50%;
     }
 
-    #pruebita2{
+    #pruebita2 {
       margin-left: 55%;
     }
-    #pruebita3{
+
+    #pruebita3 {
       margin-left: 50%;
     }
-    #pruebita4{
+
+    #pruebita4 {
       margin-left: 50%;
     }
-    #pruebita5{
+
+    #pruebita5 {
       margin-left: 58%;
     }
-    #pruebita6{
+
+    #pruebita6 {
       margin-left: 55%;
     }
-    #pruebita7{
+
+    #pruebita7 {
       margin-left: 57%;
     }
-    #pruebita8{
+
+    #pruebita8 {
       margin-left: 53%;
     }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .notification-drop {
+      font-family: 'Ubuntu', sans-serif;
+      color: #444;
+    }
+
+    .notification-drop .item {
+      padding: 10px;
+      font-size: 18px;
+      position: relative;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .notification-drop .item:hover {
+      cursor: pointer;
+    }
+
+    .notification-drop .item i {
+      margin-left: 10px;
+    }
+
+    .notification-drop .item ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      background: #fff;
+      left: -200px;
+      right: 0;
+      z-index: 1;
+      border-top: 1px solid #ddd;
+    }
+
+    .notification-drop .item ul li {
+      font-size: 16px;
+      padding: 15px 0 15px 25px;
+    }
+
+    .notification-drop .item ul li:hover {
+      background: #ddd;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    @media screen and (min-width: 500px) {
+      .notification-drop {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .notification-drop .item {
+        border: none;
+      }
+    }
+
+    .notification-bell {
+      font-size: 20px;
+    }
+
+    .btn__badge {
+      background: #FF5D5D;
+      color: white;
+      font-size: 12px;
+      position: absolute;
+      top: 0;
+      right: 0px;
+      padding: 3px 10px;
+      border-radius: 50%;
+    }
+
+    .pulse-button {
+      box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+      animation: pulse 1.5s infinite;
+    }
+
+    .pulse-button:hover {
+      animation: none;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(255, 0, 0, 0);
+      }
+
+      100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+      }
+    }
+
+    .notification-text {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .notification-text span {
+      float: right;
+    }
+
+
+    .notification-bell {
+      font-size: 20px;
+      color: #ffffff !important;
+      height: 50px;
+      width: 50px;
+    }
+
+
   </style>
 </head>
 
@@ -160,10 +283,15 @@
     <!-- Nombre de la empresa -->
     <h1>PubPals </h1>
     <!-- Icono de notificaciones -->
-    <button class="btn btn-primary" style="padding: 5px;" onclick="alert('Martin ha aceptado tu solicitud de unirte al plan')">
-        <img src="https://images.vexels.com/media/users/3/223298/isolated/preview/d3c070ed1d488a95f3789c88b7c95674-icono-de-campana-de-notificaciones-plano.png"
-             alt="Icono de campana" style="width: 30px; height: 30px;" />
-    </button>
+    <ul class="notification-drop">
+      <li class="item">
+        <img src="img/vecteezy_bell-icon-png-transparent-notification-png_9394760.png" class="notification-bell" alt="Notificación"> 
+        <span class="btn__badge pulse-button ">1</span>
+        <ul>
+          <li>Martin ha aceptado tu solicitud</li>
+        </ul>
+      </li>
+    </ul>
   </div>
 
   <!-- Lista 1 -->
@@ -213,7 +341,7 @@
   <div class="container mt-5">
     <div class="card">
       <div class="card-header">
-        O'David's Pub: 3 planes actualmente 🟢                  
+        O'David's Pub: 3 planes actualmente 🟢
         <button class="btn btn-primary float-end toggleList" id="pruebita2">
           Planes activos
         </button>
@@ -292,7 +420,7 @@
             </button>
           </li>
           <li class="list-group-item">
-            Laura Sánchez || Valoración de usuario 5/5⭐
+            Martin || Valoración de usuario 5/5⭐
             <button class="btn btn-primary" onclick="alert('Solicitud enviada')">
               Solicitar quedar
             </button>
@@ -422,6 +550,21 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
   <script src="scriptmain.js"></script>
   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var items = document.querySelectorAll('.notification-drop .item');
+
+      items.forEach(function (item) {
+        item.addEventListener('click', function () {
+          var ul = this.querySelector('ul');
+          if (ul.style.display === 'none' || ul.style.display === '') {
+            ul.style.display = 'block';
+          } else {
+            ul.style.display = 'none';
+          }
+        });
+      });
+    });
+
     function showCitaForm() {
       var fecha = prompt("Introduce la fecha de la cita (YYYY-MM-DD):");
       var hora = prompt("Introduce la hora de la cita (HH:MM):");
